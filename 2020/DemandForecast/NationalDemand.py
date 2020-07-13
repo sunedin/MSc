@@ -30,7 +30,7 @@ import numpy as np
 import os
 
 
-def process_energy_data(dir='data\\raw_data_UK',
+def process_energy_data(dir='raw_data_UK',
                         files=['Total Load - Day Ahead _ Actual_{}.csv'.format(i) for i in range(2016, 2020)]
                         ):
     """
@@ -166,4 +166,4 @@ def remove_duplicated_rows(data):
 
 if __name__ == '__main__':
     dm = process_energy_data()
-    dm.to_csv('UK_NationalDemand_2016_2019.csv')
+    dm.to_csv('NationalDemand_2016_2019.csv')
